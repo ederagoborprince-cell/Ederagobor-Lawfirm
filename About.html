@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EderagoborLawFirm About</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Ederagobor<span>LawFirm</span></a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Cases.html">Cases</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Gallary.html">Gallery</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/law 3.jpg" alt="Law Office">
+                </div>
+                <div class="about-text">
+                    <h2>Ederagobor Law Firm</h2>
+                    <p>Ederagobor Law Firm are a reputable law firm based in Lagos, Nigeria, specializing in civil litigation, corporate law, family law, and property law.</p>
+                    <p>Our team of experienced lawyers is dedicated to providing personalized legal solutions and representation for individuals and businesses.</p>
+                    <p>We pride ourselves on professionalism, confidentiality, and a client-focused approach to every case.</p>
+                    <a href="https://wa.me/2348073467960" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+         <footer>
+        <div class="container">
+            <div class="footer-container">
+                
+                <div class="footer-section">
+                     <div class="footer-section">
+                    <h3>Ederagobor Law Firm</h3>
+                    <p>Trusted legal advisors in Lagos, Nigeria. We provide expert legal services for individuals and businesses.</p>
+                </div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Skill.html">Skills</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Gallary.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> theederagoborlawfirm@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +234 807 3467 960</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lagos, LG</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Ederagobor Law Firm. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+        <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
